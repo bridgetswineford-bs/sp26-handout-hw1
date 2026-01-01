@@ -2,6 +2,9 @@
 Main module to run the Housing Priority Calculator application.
 """
 
+import sys
+sys.path.append(".")
+
 from src.question_asker import (
     ask_additional_questions,
     ask_class_year,

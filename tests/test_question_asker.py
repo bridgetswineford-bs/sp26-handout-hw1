@@ -3,6 +3,8 @@ Unit tests for the HousingQuestionAsker class.
 """
 
 import unittest
+import sys
+sys.path.append(".")
 from unittest.mock import patch
 from src.question_asker import (
     ask_additional_questions,

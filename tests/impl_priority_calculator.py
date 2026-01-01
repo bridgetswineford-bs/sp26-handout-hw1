@@ -3,6 +3,8 @@ Unit tests for the HousingPriorityCalculator class.
 """
 
 import unittest
+import sys
+sys.path.append(".")
 from src.priority_calculator import (
     points_for_additional_questions,
     points_for_credits,
