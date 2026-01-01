@@ -1,6 +1,8 @@
 
 # HW 1: Housing Priority Calculator
 
+## Due Wednesday, January 21 at 6pm Pacific / 9pm Eastern
+
 ## Learning Outcomes
 - Practice designing functions in Python with type annotations, documentation, and tests
 - Using dictionaries
