@@ -2,6 +2,7 @@
     "pylint.args": [
         "--disable=import-error",
         "--disable=assignment-from-no-return",
+        "--disable=wrong-import-position",
     ],
     "pylint.severity": {
         "convention": "Information",
