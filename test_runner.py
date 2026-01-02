@@ -32,7 +32,7 @@ if __name__ == '__main__':
                 verbosity=2
             ).run(suite)
     else:
-        print("\n\033[1m    1)Running interface tests: make sure these test file " \
+        print("\n\033[1m    1)Running common tests: make sure these test file " \
         "names start with `test_`, or they won't run\033[0m\n")
         interface_suite = unittest.defaultTestLoader.discover(start_dir='tests',
                                                               pattern='test_*.py')
@@ -42,7 +42,7 @@ if __name__ == '__main__':
         ).run(interface_suite)
 
 
-        print("\n\033[1m    2)Running implementation tests: make sure these test " \
+        print("\n\033[1m    2)Running implementation-specific tests: make sure these test " \
         "file names start with `impl_`, or they won't run\033[0m\n")
         impl_suite = unittest.defaultTestLoader.discover(start_dir='tests', pattern='impl_*.py')
 
