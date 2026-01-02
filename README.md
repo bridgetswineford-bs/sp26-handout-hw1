@@ -9,7 +9,7 @@
 ## Learning Outcomes
 - [Submitting code to GitHub](https://neu-pdi.github.io/cs2100-public-resources/lecture-notes/next/l1-intro-python1#vscode-pawtograder-and-github)
 - [Practice designing functions with type annotations, documentation, and tests](https://neu-pdi.github.io/cs2100-public-resources/lecture-notes/next/l1-intro-python1#functions-including-documentation-and-tests)
-- [Testing functions that print and take user input](https://neu-pdi.github.io/cs2100-public-resources/lecture-notes/next/l2-python2#read-and-write-data-from-user-input-and-text-files)
+- [Testing functions that print and take user input](https://neu-pdi.github.io/cs2100-public-resources/lecture-notes/next/l2-python2#testing-functions-that-print-or-take-user-input)
 - [Using dictionaries](https://neu-pdi.github.io/cs2100-public-resources/lecture-notes/next/l3-python3#data-structures-list-set-and-dict)
 
 ## Overview
