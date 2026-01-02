@@ -3,6 +3,8 @@
         "--disable=import-error",
         "--disable=assignment-from-no-return",
         "--disable=wrong-import-position",
+        "--disable=trailing-whitespace",
+        "--disable=too-many-locals"
     ],
     "pylint.severity": {
         "convention": "Information",
