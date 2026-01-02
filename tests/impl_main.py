@@ -13,7 +13,7 @@ class TestHousingPriorityCalculatorMain(unittest.TestCase):
 
     @patch('builtins.print')
     @patch('builtins.input', side_effect=['2', '60', 'y', 'n'])
-    def test_main_senior_graduating(self, mock_print: Mock) -> None:
+    def test_main_senior_graduating(self, _: Mock, mock_print: Mock) -> None:
         """Test main function for senior who is graduating.
         
         This test is provided as an example for syntax. Please update it to fit your scoring

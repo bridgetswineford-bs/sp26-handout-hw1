@@ -2,6 +2,8 @@
 Unit tests for the HousingPriorityCalculator class.
 """
 
+import sys
+sys.path.append('.')
 import unittest
 from src.priority_calculator import (
     points_for_additional_questions,
@@ -17,8 +19,8 @@ class TestHousingPriorityCalculator(unittest.TestCase):
 
     def test_points_for_class_year_freshman(self) -> None:
         """Test points_for_class_year for freshman (year 1)."""
-        # Based on YOUR scoring system, what should freshman get?
-        # If your system gives freshman 10 points, then:
+        # Based on YOUR scoring system, what should freshmen get?
+        # If your system gives freshmen 10 points, then:
         # expected_points = 10
         pass
 
@@ -50,8 +52,6 @@ class TestHousingPriorityCalculator(unittest.TestCase):
     def test_points_for_credits_zero(self) -> None:
         """Test points_for_credits with 0 credits."""
         # What should 0 credits give?
-        # result = self.priority_calculator.points_for_credits(0)
-        # self.assertEqual(result, 0)
         pass
 
     def test_points_for_credits_low(self) -> None:
@@ -70,44 +70,28 @@ class TestHousingPriorityCalculator(unittest.TestCase):
 
     def test_points_for_additional_questions_all_true(self) -> None:
         """Test points_for_additional_questions with all True responses."""
-        # Based on YOUR additional questions and scoring:
-        # If you ask 'old23' (2 pts) and 'honors' (3 pts):
-        # responses = {'old23': True, 'honors': True}
+        # Based on YOUR additional questions and scoring, what should all True yield?
         pass
 
     def test_points_for_additional_questions_all_false(self) -> None:
         """Test points_for_additional_questions with all False responses."""
-        # Usually all False should give 0 points:
-        # responses = {'old23': False, 'honors': False}
         pass
 
     def test_points_for_additional_questions_mixed(self) -> None:
         """Test points_for_additional_questions with mixed responses."""
-        # Test partial points:
-        # responses = {'old23': True, 'honors': False}
         pass
 
     def test_calculate_total_score_freshman_scenario(self) -> None:
         """Test calculate_total_score for a freshman scenario."""
         # Calculate expected total based on YOUR scoring system
-        # Example scenario: year=1, is_graduating=False, credits=8,
-        #  additional_responses={'old23': False, 'honors': True}
-        # If your system: freshman=10pts, not_graduating=0pts, credits=8pts, honors_only=3pts
-        # expected_total = 10 + 0 + 8 + 3 = 21
         pass
 
     def test_calculate_total_score_senior_graduating_scenario(self) -> None:
         """Test calculate_total_score for a graduating senior scenario."""
-        # Calculate expected total for: year=4, is_graduating=True, credits=16,
-        #  additional_responses={'old23': True, 'honors': True}
-        # Work out the math based on YOUR scoring system first!
         pass
 
     def test_calculate_total_score_senior_non_graduating_scenario(self) -> None:
         """Test calculate_total_score for a non-graduating senior scenario."""
-        # Calculate expected total for: year=4, is_graduating=False, credits=20,
-        #  additional_responses={'old23': False, 'honors': False}
-        # Work out the math based on YOUR scoring system first!
         pass
 
     def test_calculate_total_score_edge_cases(self) -> None:

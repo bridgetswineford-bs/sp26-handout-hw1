@@ -63,6 +63,9 @@ Based on their inputs to the questions asked, students receive a score that is u
  - How many points for graduating vs. not graduating?
  - How many points per credit hour?
  - What additional questions will you ask and how many points each?
+   - Our autograder is set to allow up to five additional questions. If you have a compelling reason to ask more than five additional questions, please reach out to an instructor.
+
+Additional questions must all be yes/no questions.
 
 You are free to choose your own scoring system, but you will need to be able to explain why you made those choices. 
 
