@@ -26,18 +26,18 @@ class TestHousingQuestionAsker(unittest.TestCase):
         
         Use this test as an example to complete the rest of the tests.
         """
-        with patch('builtins.input', return_value='3'): # Simulate user typing '3'
+        with patch('builtins.input', side_effect=['3']): # Simulate user typing '3'
             result = ask_class_year()
             self.assertEqual(result, 3) # Check that it returned 3
 
     def test_ask_class_year_freshman(self) -> None:
         """Test ask_class_year returns 1 for freshman."""
-        with patch('builtins.input', return_value='1'):
+        with patch('builtins.input', side_effect=['1']):
             pass
 
     def test_ask_class_year_senior(self) -> None:
         """Test ask_class_year returns 4 for senior."""
-        with patch('builtins.input', return_value='4'):
+        with patch('builtins.input', side_effect=['4']):
             pass
 
     def test_ask_class_year_invalid_then_valid(self) -> None:
@@ -52,22 +52,22 @@ class TestHousingQuestionAsker(unittest.TestCase):
 
     def test_ask_graduation_status_yes(self) -> None:
         """Test ask_graduation_status with 'y' input."""
-        with patch('builtins.input', return_value='y'):
+        with patch('builtins.input', side_effect=['y']):
             pass
 
     def test_ask_graduation_status_uppercase_yes(self) -> None:
         """Test ask_graduation_status with 'Y' input (uppercase)."""
-        with patch('builtins.input', return_value='Y'):
+        with patch('builtins.input', side_effect=['Y']):
             pass
 
     def test_ask_graduation_status_no(self) -> None:
         """Test ask_graduation_status with 'n' input."""
-        with patch('builtins.input', return_value='n'):
+        with patch('builtins.input', side_effect=['n']):
             pass
 
     def test_ask_graduation_status_uppercase_no(self) -> None:
         """Test ask_graduation_status with 'N' input (uppercase)."""
-        with patch('builtins.input', return_value='N'):
+        with patch('builtins.input', side_effect=['N']):
             pass
 
     def test_ask_graduation_status_invalid_then_valid(self) -> None:
@@ -77,17 +77,17 @@ class TestHousingQuestionAsker(unittest.TestCase):
 
     def test_ask_credits_earned_valid(self) -> None:
         """Test ask_credits_earned with valid input."""
-        with patch('builtins.input', return_value='15'):
+        with patch('builtins.input', side_effect=['15']):
             pass
 
     def test_ask_credits_earned_zero(self) -> None:
         """Test ask_credits_earned with zero credits."""
-        with patch('builtins.input', return_value='0'):
+        with patch('builtins.input', side_effect=['0']):
             pass
 
     def test_ask_credits_earned_high_number(self) -> None:
         """Test ask_credits_earned with high credit count."""
-        with patch('builtins.input', return_value='120'):
+        with patch('builtins.input', side_effect=['120']):
             pass
 
     def test_ask_credits_earned_invalid_then_valid(self) -> None:

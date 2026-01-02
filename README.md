@@ -1,12 +1,16 @@
 
 # HW 1: Housing Priority Calculator
 
+> [!CAUTION]
+> Make sure the name of this repository / directory has your GitHub username in it. Otherwise, you will not be able to submit any work. You can find the repository with your GitHub username through Pawtograder.
+
 ## Due Wednesday, January 21 at 6pm Pacific / 9pm Eastern
 
 ## Learning Outcomes
-- Practice designing functions in Python with type annotations, documentation, and tests
-- Using dictionaries
-- Working with user input
+- [Submitting code to GitHub](https://neu-pdi.github.io/cs2100-public-resources/lecture-notes/next/l1-intro-python1#vscode-pawtograder-and-github)
+- [Practice designing functions with type annotations, documentation, and tests](https://neu-pdi.github.io/cs2100-public-resources/lecture-notes/next/l1-intro-python1#functions-including-documentation-and-tests)
+- [Testing functions that print and take user input](https://neu-pdi.github.io/cs2100-public-resources/lecture-notes/next/l2-python2#read-and-write-data-from-user-input-and-text-files)
+- [Using dictionaries](https://neu-pdi.github.io/cs2100-public-resources/lecture-notes/next/l3-python3#data-structures-list-set-and-dict)
 
 ## Overview
 Welcome to your first programming assignment of the semester! In this assignment you will be building a housing "priority score" engine in Python that decides who gets the first pick of campus housing. You'll dive into human-centered design—chatting with users, uncovering their needs, and iterating on your plan—while mastering Python basics: grabbing input, crafting if/elif/else logic, performing arithmetic, and tallying up points.
@@ -82,34 +86,24 @@ The tests in file names starting with `test_`, on the other hand, are interface 
 - **Fill in expected values** for each test method
 - **Test edge cases** (invalid years, negative credits, etc.)
 
-#### 3c optional. Write `impl_main.py`
-- **Testing the `main()` function is optional** because it requires looking up how to test printed output. It is a good skill, but not required for HW1.
-- Create a file in `tests/` called `impl_main.py` and write tests for `main()` in it.
+#### 3c. Complete `impl_main.py`
 - **Test** that graduation questions are only asked for seniors
 - **Test** different scenarios (freshman, non-graduating senior, etc.)
 
 #### 3d. Commit test files
 
+- Submit your code to GitHub. These commands should help:
+  - `git add .`
+  - `git commit -m "Wrote tests for question asker, priority calculator, and main"`
+  - `git push`
+- Check Pawtograder to make sure the submission went through. If not, please ask for help during office hours.
 - You may try to run your tests now. Your tests will fail; this is expected: we haven't gotten to implementing the functionality yet.
 
 ### Part 4: Implement functions according to your test specification
 
-Now, implement the functions:
+Now, implement the functions in `question_asker.py`, `priority_calculator.py`, and `main.py`.
 
-#### 4a. Implement `question_asker.py`
-- **Implement input validation** and error handling
-- **Run tests**: `python3 -m pytest test_question_asker.py -v`
-- **Handle edge cases** like invalid input followed by valid input
-
-#### 4b. Implement `priority_calculator.py`
-- **Implement each method** according to your scoring system
-- **Run tests frequently**: `python3 -m pytest test_priority_calculator.py -v`
-- **Make sure each test passes** before moving to the next method
-
-#### 4c. Implement `main.py`
-- **Implement the coordination logic**
-- **If you wrote tests for `main()`, run them**: `python3 -m pytest impl_main.py -v`
-- **Run `main.py` it to make sure graduation questions are only asked for seniors**
+Your tests should start to pass as you implement.
 
 ### Part 5: Extending Additional Questions
 * **Add exactly two new yes/no prompts** (e.g., older than 23?, honors student?)
