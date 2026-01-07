@@ -17,7 +17,8 @@ class TestHousingPriorityCalculatorMain(unittest.TestCase):
         """Test main function for senior who is graduating.
         
         This test is provided as an example for syntax. Please update it to fit your scoring
-        logic and expected outputs.
+        logic and expected outputs. Make sure to update the mock user input and rename
+        the test function as needed.
         """
         main()
         mock_print.assert_any_call("Hi, welcome to the Housing Score Calculator")
