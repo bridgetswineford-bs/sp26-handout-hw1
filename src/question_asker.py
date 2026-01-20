@@ -91,3 +91,33 @@ def ask_additional_questions() -> dict[str, bool]:
         'your_second_key': boolean_result_2 
         }
     """
+    perfect_gpa = False
+    valid = False
+    while not valid:
+        gpa_response = input('Do you have a 4.0 GPA? (y/n): ')
+        if gpa_response in ['y', 'Y']:
+            perfect_gpa = True
+            valid = True
+        elif gpa_response in ['n', 'N']:
+            perfect_gpa = False
+            valid = True
+        else:
+            print('Your input is invalid. Please enter y or n.')
+    
+    international = False
+    valid = False
+    while not valid:
+        intl_response = input('Are you an international student? (y/n): ')
+        if intl_response in ['y', 'Y']:
+            international = True
+            valid = True
+        elif intl_response in ['n', 'N']:
+            international = False
+            valid = True
+        else:
+            print('Your input is invalid. Please enter y or n.')
+    
+    return {
+        'perfect_GPA': perfect_gpa,
+        'international_student': international
+    }

@@ -18,6 +18,7 @@ def points_for_class_year(year: int) -> int:
     
     Implement logic to calculate points based on class year
     """
+    return year
 
 
 def points_for_graduation(is_graduating: bool) -> int:
@@ -29,6 +30,7 @@ def points_for_graduation(is_graduating: bool) -> int:
     
     Implement logic for calculating points for a graduating student
     """
+    return 5 if is_graduating else 0
 
 def points_for_credits(num_credits: int) -> int:
     """
@@ -45,6 +47,8 @@ def points_for_credits(num_credits: int) -> int:
     
     Implement points system for credits.
     """
+    return num_credits
+
 
 def points_for_additional_questions(responses: dict[str, bool]) -> int:
     """
@@ -55,10 +59,17 @@ def points_for_additional_questions(responses: dict[str, bool]) -> int:
     - 'honors': True → 3 points, False → 0 points
     - Total for {'old23': True, 'honors': False} = 2 + 0 = 2 points
 
+    
     Design your own questions and point values!
     
     Implement scoring logic.
     """
+    total = 0
+    if responses.get('perfect_GPA', False):
+        total += 4
+    if responses.get('international_student', False):
+        total += 3
+    return total
 
 
 def calculate_total_score(
