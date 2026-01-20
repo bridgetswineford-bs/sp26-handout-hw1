@@ -118,6 +118,6 @@ def ask_additional_questions() -> dict[str, bool]:
             print('Your input is invalid. Please enter y or n.')
     
     return {
-        'perfect_GPA': perfect_gpa,
+        'perfect_GPAa': perfect_gpa,
         'international_student': international
     }
